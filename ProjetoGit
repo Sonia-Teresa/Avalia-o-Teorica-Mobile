@@ -1,0 +1,26 @@
+Descreva a arquitetura  do sistema operacional Android
+A arquitetura da plataforma Android é constituída por cinco módulos: Kernel Linux, Biblioteca, Runtime (ambiente de execução), Framework de Aplicações e Aplicações.
+A arquitetura em camadas consiste em níveis sobrepostos, onde cada camada tem um conjunto de funções que podem ser utilizadas pelas camadas superiores. Aqui podemos pensar na maioria das versões do Linux, ou o Windows. A arquitetura de microkernel é pensada para tornar o sistema operacional menor e mais simples.
+Descreva como desenvolvemos interfaces em aplicações A ndroid nativas em Kotlin
+O Android oferece diversos componentes de IU pré-criados, como objetos de layout e controles de IU estruturados que permitem criar a interface gráfica do usuário do app. Ele também oferece outros módulos de IU para interfaces especiais, como caixas de diálogo, notificações e menus. Para começar, leia Layouts
+A interface do usuário do seu app é tudo aquilo que um usuário pode ver e com que pode interagir. O Android oferece diversos componentes de IU pré-criados, como objetos de layout e controles de IU estruturados que permitem criar a interface gráfica do usuário do app. Ele também oferece outros módulos de IU para interfaces especiais, como caixas de diálogo, notificações e menus.
+Defina o que e um View	
+View no Android. Simplificando, a View é um retângulo na tela que mostra algum conteúdo. Ela pode ser uma imagem, um pedaço de texto, um botão ou qualquer outra coisa que o aplicativo pode exibir. E todas as Views juntas formam o layout da interface.
+Defina o que é uma Event Listener
+Listeners de eventos. Um listener de eventos é uma interface na classe View que contém um único método de callback. Esses métodos serão chamados pelo framework do Android quando a View a que o Listener estiver registrado for ativada pela interação do usuário com o item na IU.
+Defina o que é o Graddle
+Apenas para uma breve introdução, o Gradle trata-se de uma ferramenta de build open source bastante poderosa que nos permite configurar arquivos de build por meio da sua DSL (Domain Specific Language) baseada na linguagem Groovy.
+
+Descreva o que é o SKD android
+O Kit de Desenvolvimento de Software (Software Development Kit ou SDK) do Android é um conjunto de ferramentas que os desenvolvedores e programadores usam para criar aplicativos para smartphones e tablets com o sistema operacional da Google.
+Escreva o que são API  level, e dentro das configs de build o que é Target API e minimal API level 
+API Level (Nível do API): é um identificador numérico composto de um único digito decimal. O API Level é incrementado em 1 para cada versão lançada do Android, independente se é uma versão menor ou uma mudança de geração
+O sistema de build permite identificar exclusivamente  pacotes diferentes para cada versões de produtos(demo ou full) e tipo de build. O ID do aplicativo no tipo de bulid é adicionado como um sufixo na versão do produto. 
+Tipos de build representam as versões de compilação gerado para cada pacote da aplicação. Por padrão são fornecidos os tipos de debug e release de build. 
+iso permite depurar o app em dispositivos Android seguros e configura a assinatura de apps com um keystore de depuração genérico. 
+O que é o processo de build 
+O processo de build de um software é responsável por verificar se todos os componentes do nosso código fonte estão sendo integrados de maneira correta. Esse processo geralmente é manual, conforme o passar do tempo se torna uma tarefa repetitiva e propensa a erros. 
+Descreva como podemos testar aplicações android em nossos próprio celular.
+No Android-Studio, selecione seu App no menu suspenso de configurações de execução depuração, na barra de ferramentas.
+Na barra de ferramentas, selecione o dispositivo na qual será executado o App no menu do dispositivo de destino.
+
